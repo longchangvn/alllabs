@@ -1,0 +1,31 @@
+body{
+    color: gray;
+}
+header{
+    margin-bottom: 35px;;
+}
+a.active{
+    color: white !important;
+    font-size: 1.5em;
+}
+.container-fluid{
+    background-color: #33AFFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: whitesmoke;
+}
+li:not(:first-child){
+  
+    border-left: 2px solid whitesmoke;
+    padding-left: 50px;
+}
+.nav-item{
+    padding-right: 50px;
+    
+}
+a.nav-link{
+    color: whitesmoke;
+}
+a.nav-link .active{
+    color: white;
+}
