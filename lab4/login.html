@@ -21,12 +21,16 @@
             <form method="get" action="product.html">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input required type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" pattern="(?=\d+)(?=[a-z]*)(?=[A-Z]*).{10,}" class="form-control" id="exampleInputPassword1">
+                    <input type="password" required pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{10,}$" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="url" class="form-label">Website Url</label>
+                    <input type="text" required pattern="(http:\/\/|https:\/\/).+" class="form-control" id="url">
                 </div>
                 <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">

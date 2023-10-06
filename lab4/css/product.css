@@ -7,11 +7,12 @@ header{
 a.active{
     color: white !important;
     font-size: 1.5em;
+    padding-top: 0;
 }
 .container-fluid{
     background-color: #33AFFF;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     color: whitesmoke;
 }
 li:not(:first-child){
@@ -21,11 +22,24 @@ li:not(:first-child){
 }
 .nav-item{
     padding-right: 50px;
-    
+    padding-top: 5px;
+}
+ul.navbar-nav{
+    height: 40px;
+}
+.navbar{
+    padding-top:0
 }
 a.nav-link{
     color: whitesmoke;
 }
 a.nav-link .active{
     color: white;
+}
+.actions button{
+    margin-right: 50px;;
+}
+
+#username{
+    margin-right: 5px;
 }
