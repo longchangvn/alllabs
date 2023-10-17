@@ -137,13 +137,16 @@ window.onload = function () {
     document.getElementById("chkShowOutPatients").addEventListener("change", function (event) {
         drawTable(filterDisplay(patients));
     })
-    document.getElementById("p1").onclick = function(){
+    document.getElementById("p1").onclick = function(e){
+        e.preventDefault();
         updateValue(testpatients[0])
     }
-    document.getElementById("p2").onclick = function(){
+    document.getElementById("p2").onclick = function(e){
+        e.preventDefault();
         updateValue(testpatients[1])
     }
-    document.getElementById("p3").onclick = function(){
+    document.getElementById("p3").onclick = function(e){
+        e.preventDefault();
         updateValue(testpatients[2])
     }
     drawTable();
