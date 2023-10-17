@@ -21,11 +21,16 @@ class Question {
 
 class Quiz {
     constructor(questions, students) {
-        this.questions = questions
+        this.questions = new Map();
+        questions.forEach(q => {
+            this.questions.set(q.qid, q);
+        })
+
         this.students = students;
     }
     scoreStudentBySid(sid) {
         let stu = this.students.find(s => s.studentId == sid);
+
         let score = 0;
         if (!stu)
             return 0;
